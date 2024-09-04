@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 10
-#define YY_END_OF_BUFFER 11
+#define YY_NUM_RULES 14
+#define YY_END_OF_BUFFER 15
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -360,11 +360,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[23] =
+static const flex_int16_t yy_accept[25] =
     {   0,
-        0,    0,   11,    9,    1,    8,    2,    7,    6,    4,
-        3,    3,    1,    7,    2,    3,    3,    3,    3,    3,
-        3,    0
+        0,    0,   15,   13,   12,   11,    6,    7,    8,    9,
+       10,    4,    3,    2,    2,    5,   10,    2,    2,    2,
+        2,    2,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -372,17 +372,17 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    2,    1,    1,    4,    1,    1,    1,    1,    1,
-        1,    5,    5,    1,    5,    1,    5,    6,    6,    6,
-        6,    6,    6,    6,    6,    6,    6,    7,    1,    1,
-        8,    1,    1,    1,    9,    9,    9,    9,    9,    9,
-        9,    9,    9,    9,    9,    9,    9,    9,    9,    9,
-        9,    9,    9,    9,    9,    9,    9,    9,    9,    9,
-        1,    1,    1,    1,    9,    1,   10,   11,    9,   12,
+        1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    4,    5,    1,    6,    1,    7,    8,    8,    8,
+        8,    8,    8,    8,    8,    8,    8,    9,    1,    1,
+       10,    1,    1,    1,   11,   11,   11,   11,   11,   11,
+       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
+       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
+        1,    1,    1,    1,   11,    1,   12,   13,   11,   14,
 
-        9,    9,    9,    9,    9,    9,    9,   13,   14,    9,
-        9,    9,    9,    9,    9,    9,    9,    9,    9,    9,
-        9,    9,    1,    1,    1,    1,    1,    1,    1,    1,
+       11,   11,   11,   11,   11,   11,   11,   15,   16,   11,
+       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
+       11,   11,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -399,42 +399,42 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[15] =
+static const YY_CHAR yy_meta[17] =
     {   0,
-        1,    2,    3,    1,    2,    2,    1,    1,    2,    2,
-        2,    2,    2,    2
+        1,    1,    1,    1,    1,    1,    1,    2,    1,    1,
+        2,    2,    2,    2,    2,    2
     } ;
 
 static const flex_int16_t yy_base[26] =
     {   0,
-        0,    0,   35,   36,   32,   36,    0,    0,   36,   36,
-       13,   17,   31,    0,    0,   22,    6,   13,   16,   21,
-       15,   36,   19,   28,   15
+        0,    0,   26,   27,   27,   27,   21,   27,   27,   27,
+       16,   27,   27,    0,   11,   27,   14,    0,    5,    7,
+        5,    6,    0,   27,   15
     } ;
 
 static const flex_int16_t yy_def[26] =
     {   0,
-       22,    1,   22,   22,   23,   22,   24,   23,   22,   22,
-       25,   25,   23,   23,   24,   12,   12,   12,   12,   12,
-       12,    0,   22,   22,   22
+       24,    1,   24,   24,   24,   24,   24,   24,   24,   24,
+       24,   24,   24,   25,   25,   24,   24,   25,   25,   25,
+       25,   25,   25,    0,   24
     } ;
 
-static const flex_int16_t yy_nxt[51] =
+static const flex_int16_t yy_nxt[44] =
     {   0,
-        4,    5,    6,    7,    8,    8,    9,   10,   11,   11,
-       11,   11,   12,   11,   14,   16,   16,   14,   14,   18,
-       14,   14,   16,   19,   16,   16,   17,   20,   15,   15,
-       21,   16,   13,   13,   22,    3,   22,   22,   22,   22,
-       22,   22,   22,   22,   22,   22,   22,   22,   22,   22
+        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
+       14,   14,   14,   14,   15,   14,   18,   23,   22,   21,
+       20,   17,   19,   17,   16,   24,    3,   24,   24,   24,
+       24,   24,   24,   24,   24,   24,   24,   24,   24,   24,
+       24,   24,   24
     } ;
 
-static const flex_int16_t yy_chk[51] =
+static const flex_int16_t yy_chk[44] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,   11,   17,   25,   11,   12,   17,
-       23,   12,   18,   18,   21,   19,   12,   19,   24,   24,
-       20,   16,   13,    5,    3,   22,   22,   22,   22,   22,
-       22,   22,   22,   22,   22,   22,   22,   22,   22,   22
+        1,    1,    1,    1,    1,    1,   25,   22,   21,   20,
+       19,   17,   15,   11,    7,    3,   24,   24,   24,   24,
+       24,   24,   24,   24,   24,   24,   24,   24,   24,   24,
+       24,   24,   24
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -454,15 +454,22 @@ char *yytext;
 #line 1 "lambda.l"
 #line 2 "lambda.l"
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
-int is_valid_lambda = 0;
+bool valid_expression = true;
+enum { NONE, VARIABLE, ASSIGNMENT, LAMBDA, COLON, EXPRESSION } state = NONE;
+bool lambda_found = false;
+bool colon_found = false;
+bool assignment_found = false;
+bool variable_found = false;
 
-int yywrap() {
-    return 1;
+void print_error(const char* message) {
+    fprintf(stderr, "Error: %s\n", message);
+    valid_expression = false;
 }
-#line 465 "lex.yy.c"
-#line 466 "lex.yy.c"
+#line 472 "lex.yy.c"
+#line 473 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -679,10 +686,10 @@ YY_DECL
 		}
 
 	{
-#line 12 "lambda.l"
+#line 19 "lambda.l"
 
 
-#line 686 "lex.yy.c"
+#line 693 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -709,13 +716,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 23 )
+				if ( yy_current_state >= 25 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 36 );
+		while ( yy_base[yy_current_state] != 27 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -741,90 +748,157 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 14 "lambda.l"
-{ /* Ignorar espacios en blanco */ }
+#line 21 "lambda.l"
+{ 
+                if (state == VARIABLE || state == ASSIGNMENT) {
+                    lambda_found = true;
+                    state = LAMBDA;
+                    printf("Token: LAMBDA\n");
+                } else {
+                    print_error("Lambda should follow a variable or assignment.");
+                }
+              }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 15 "lambda.l"
-{ /* Ignorar comentarios en Python */ }
+#line 30 "lambda.l"
+{
+                      if (state == NONE || state == VARIABLE) {
+                          state = VARIABLE;
+                          variable_found = true;
+                          printf("Token: VARIABLE\n");
+                      } else if (state == LAMBDA) {
+                          state = COLON;
+                          printf("Token: VARIABLE\n");
+                      } else if (state == ASSIGNMENT) {
+                          state = LAMBDA;
+                          printf("Token: VARIABLE\n");
+                      } else {
+                          print_error("Unexpected variable placement.");
+                      }
+                      }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 17 "lambda.l"
-{ 
-                        printf("Identificador: %s\n", yytext);
-                        printf("Estado actual: %d\n", is_valid_lambda);
-                        if (is_valid_lambda == 0) is_valid_lambda = 1; 
-                      }
+#line 45 "lambda.l"
+{
+                if (state == VARIABLE) {
+                    assignment_found = true;
+                    state = ASSIGNMENT;
+                    printf("Token: ASSIGNMENT\n");
+                } else {
+                    print_error("Assignment (=) should follow a variable.");
+                }
+              }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 22 "lambda.l"
-{ 
-                        printf("Signo igual: %s\n", yytext);
-                        printf("Estado antes de '=': %d\n", is_valid_lambda);
-                        if (is_valid_lambda == 1) is_valid_lambda = 2; 
-                        printf("Estado después de '=': %d\n", is_valid_lambda);
-                      }
+#line 54 "lambda.l"
+{
+                if (state == LAMBDA) {
+                    state = COLON;
+                    printf("Token: COLON\n");
+                } else {
+                    print_error("Colon (:) should follow lambda.");
+                }
+              }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 28 "lambda.l"
+#line 62 "lambda.l"
 { 
-                        printf("Palabra clave lambda: %s\n", yytext);
-                        printf("Estado antes de 'lambda': %d\n", is_valid_lambda);
-                        if (is_valid_lambda == 2) is_valid_lambda = 3; 
-                        printf("Estado después de 'lambda': %d\n", is_valid_lambda);
-                      }
+                if (state == EXPRESSION) {
+                    printf("Token: EXPONENT\n");
+                } else {
+                    print_error("Exponent (**) should be in an expression context.");
+                }
+              }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 34 "lambda.l"
-{ 
-                        printf("Dos puntos: %s\n", yytext);
-                        printf("Estado antes de ':': %d\n", is_valid_lambda);
-                        if (is_valid_lambda == 3) is_valid_lambda = 4; 
-                        printf("Estado después de ':': %d\n", is_valid_lambda);
-                      }
+#line 69 "lambda.l"
+{
+                if (state == EXPRESSION) {
+                    printf("Token: MULTIPLY\n");
+                } else {
+                    print_error("Multiplication (*) should be in an expression context.");
+                }
+              }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 40 "lambda.l"
-{ 
-                        printf("Expresión: %s\n", yytext);
-                        printf("Estado antes de expresión: %d\n", is_valid_lambda);
-                        if (is_valid_lambda == 4) is_valid_lambda = 5; 
-                        printf("Estado después de expresión: %d\n", is_valid_lambda);
-                      }
+#line 76 "lambda.l"
+{
+                if (state == EXPRESSION) {
+                    printf("Token: PLUS\n");
+                } else {
+                    print_error("Plus (+) should be in an expression context.");
+                }
+              }
 	YY_BREAK
 case 8:
-/* rule 8 can match eol */
 YY_RULE_SETUP
-#line 46 "lambda.l"
-{ 
-                        if (is_valid_lambda == 5) {
-                            printf("ACEPTA\n");
-                        } else {
-                            printf("NO ACEPTA\n");
-                        }
-                        is_valid_lambda = 0; 
-                      }
+#line 83 "lambda.l"
+{
+                if (state == EXPRESSION) {
+                    printf("Token: MINUS\n");
+                } else {
+                    print_error("Minus (-) should be in an expression context.");
+                }
+              }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 55 "lambda.l"
-{ 
-                        printf("Símbolo desconocido: %s\n", yytext);
-                        is_valid_lambda = 0; 
-                      }
+#line 90 "lambda.l"
+{
+                if (state == EXPRESSION) {
+                    printf("Token: DIVIDE\n");
+                } else {
+                    print_error("Divide (/) should be in an expression context.");
+                }
+              }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 60 "lambda.l"
+#line 97 "lambda.l"
+{
+                if (state == VARIABLE || state == COLON) {
+                    state = EXPRESSION;
+                }
+                printf("Token: NUMBER\n");
+              }
+	YY_BREAK
+case 11:
+/* rule 11 can match eol */
+YY_RULE_SETUP
+#line 103 "lambda.l"
+{
+                if (state == EXPRESSION) {
+                    printf("End of line.\n");
+                } else {
+                    print_error("Line should end with a valid expression.");
+                }
+                state = NONE; // Reset state for new line
+              }
+	YY_BREAK
+case 12:
+YY_RULE_SETUP
+#line 111 "lambda.l"
+{ /* Ignorar espacios y tabulaciones */ }
+	YY_BREAK
+case 13:
+YY_RULE_SETUP
+#line 112 "lambda.l"
+{ 
+                print_error("Unknown token encountered.");
+              }
+	YY_BREAK
+case 14:
+YY_RULE_SETUP
+#line 116 "lambda.l"
 ECHO;
 	YY_BREAK
-#line 828 "lex.yy.c"
+#line 902 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1121,7 +1195,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 23 )
+			if ( yy_current_state >= 25 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1149,11 +1223,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 23 )
+		if ( yy_current_state >= 25 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 22);
+	yy_is_jam = (yy_current_state == 24);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1829,22 +1903,31 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 60 "lambda.l"
+#line 116 "lambda.l"
 
 
 int main(int argc, char **argv) {
-    if (argc > 1) {
-        FILE *file = fopen(argv[1], "r");
-        if (!file) {
-            printf("No se pudo abrir el archivo %s\n", argv[1]);
-            return 1;
-        }
-        yyin = file;
-        yylex();
-        fclose(file);
-    } else {
-        printf("Uso: %s <archivo.txt>\n", argv[0]);
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s <inputfile>\n", argv[0]);
+        exit(1);
     }
+
+    FILE *file = fopen(argv[1], "r");
+    if (!file) {
+        perror("Error opening file");
+        exit(1);
+    }
+
+    yyin = file;
+    yylex();
+    fclose(file);
+
+    if (valid_expression && lambda_found && colon_found && assignment_found && variable_found) {
+        printf("ACEPTADO\n");
+    } else {
+        printf("NO ACEPTADO\n");
+    }
+
     return 0;
 }
 
